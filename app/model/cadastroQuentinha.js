@@ -58,9 +58,10 @@ const styles = StyleSheet.create({
   },
 
   btnCadastro: {
-    width: '100%',
+    width: 50,
     height: 40,
     backgroundColor: '#A0522D',
-    borderRadius: 20
+    borderRadius: 20,
+    alignItems: 'flex-end'
   }
 });
