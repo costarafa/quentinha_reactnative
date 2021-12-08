@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+/*import React, {Component} from 'react';
 
 class Quentinha extends Component {
     render(){
@@ -9,3 +9,4 @@ class Quentinha extends Component {
     
   
 }
+*/

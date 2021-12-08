@@ -1,8 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
+import 'react-native-gesture-handler';
+import { StatusBar } from 'expo-status-bar';
+import {Text, View, StyleSheet, TextInput } from 'react-native';
+import {AppLoading} from 'expo';
+import {useFonts, Montserrat_400Regular, Montserrat_500Medium, Montserrat_700Bold}  from '@expo-google-fonts/montserrat';
+
+import Rotas from './src/rotas';
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    Montserrat_400Regular,
+    Montserrat_500Medium,
+    Montserrat_700Bold
+  });
+
+  if(!fontsLoaded){
+    return <AppLoading/>;
+  }
 
   const [sabor, setSabor] = useState('');
   const [preco, setPreco] = useState('');
@@ -14,7 +28,12 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-        <StatusBar hidden />
+        <StatusBar 
+          style= "light"
+          backgroundColor= "#000"
+          translucent= "{false}"
+        />
+        <Rotas/>
 
         <TextInput
           placeholder= "Sabor da marmitinha" 

@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+/* import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
 
@@ -65,3 +65,4 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end'
   }
 });
+*/
