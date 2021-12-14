@@ -21,22 +21,40 @@ function Rotas(){
                 title: 'ENCOMENDE',
                 headerTitleStyle: {
                   fontFamily: 'Montserrat_700Bold',
+                },
+                
                 headerRight: () => (                    
-                    <TouchableOpacity>
+                    <TouchableOpacity style={{marginRight: 15}}>
                         <Feather
                          name= "shopping-bag"
                          size={24}
-                         color= "black"
+                         color= "black" 
                         />
                     </TouchableOpacity>
                     
-                     )
-                 }
-             }}
+                )
+              }}
              />
             <Stack.Screen
              name="detalhes"
              component={Detalhes}
+             options= {{
+                title: 'DETALHES',
+                headerTitleStyle: {
+                  fontFamily: 'Montserrat_700Bold',
+                },
+
+                headerRight: () => (                    
+                    <TouchableOpacity style={{marginRight: 15}}>
+                        <Feather
+                         name= "shopping-bag"
+                         size={24}
+                         color= "black" 
+                        />
+                    </TouchableOpacity>
+                    
+                )
+              }}
             />
             </Stack.Navigator>
         </NavigationContainer>
