@@ -1,10 +1,10 @@
-import React from "react";
+/**import React from "react";
 import {View, Text, Image, TouchableOpacity, StylesSheet} from 'react-native';
 import {Feather, Ionicons} from '@expo/vector-icons';
 import {ScrollView} from 'react-native-gesture-handler';
 import Stars from 'react-native-stars';
 
-import SwiperComponent from '../componentes/Swiper';
+import SwiperComponent from '../src/componentes/Swiper';
 
 export default function Detalhes(){
     return (
@@ -21,4 +21,4 @@ export default function Detalhes(){
             </View>
         </View>
     );
-}
+}**/

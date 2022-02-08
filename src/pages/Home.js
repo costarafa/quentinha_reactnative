@@ -1,7 +1,7 @@
 import React from "react";
 import {View, Text, StyleSheet} from 'react-native';
 import { ScrollView, TextInput } from 'react-native-gesture-handler'
-import {Feather} from 'expo/vector-icons';
+import {Feather} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 
 
@@ -32,21 +32,21 @@ export default function Home(){
                 horizontal showsHorizontalScrollIndicator={false} 
                 style={{paddingHorizontal: 15, }}>
                     <New
-                    cover= {require('../assets/marmitinha1.jpg')}
+                    cover= {require('../../assets/marmitinha1.jpg')}
                     name= "Strogonnof de Carne"
                     description="Strogonnof de Carne, arroz, e batata palha."
                     onPress={() => navigation.navigate('detail')}
                     />
 
                     <New
-                    cover= {require('../assets/marmitinha2.jpg')}
+                    cover= {require('../../assets/marmitinha2.jpg')}
                     name= "Strogonnof de Frango"
                     description="Strogonnof de Frango arroz, e batata palha."
                     onPress={() => navigation.navigate('detail')}
                     />
 
                     <New
-                    cover= {require('../assets/marmitinha3.jpg')}
+                    cover= {require('../../assets/marmitinha3.jpg')}
                     name= "Feijoada"
                     description="Feijoada, arroz, farofinha e salada de couve-folha."
                     onPress={() => navigation.navigate('detail')}
